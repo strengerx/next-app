@@ -1,8 +1,6 @@
-import { Inter } from "next/font/google";
+import Search from "./components/Search";
 import "./globals.css";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Create Next App",
@@ -13,11 +11,12 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className='font-mono text-xl p-10'>
-				<nav>
-					<ul>
+				<nav className="w-full px-4 py-3 flex justify-between flex-col md:flex-row gap-4 items-center bg-slate-700">
+					<ul className="flex gap-4">
 						<li><Link href="/">home</Link></li>
 						<li><Link href="/users">users</Link></li>
 					</ul>
+					<Search />
 				</nav>
 				{children}
 			</body>
