@@ -10,12 +10,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<head>
-				<meta charSet="UTF-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>{metadata.title}</title>
-				<meta name="description" content={metadata.description} />
-			</head>
 			<body className="font-mono text-xl p-10">
 				<nav className="w-full px-4 py-3 flex justify-between flex-col md:flex-row gap-4 items-center bg-slate-700" role="navigation">
 					<ul className="flex gap-4" role="menu">

@@ -1,9 +1,11 @@
 import Image from "next/image";
+import fw from "./images/fw.jpg"
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
+		<section className="flex min-h-screen items-center justify-center gap-4 p-24">
 			<h1 className='text-4xl font-mono'>Hello World!</h1>
-		</main>
+			<Image className="w-[350px]" src={fw} alt="image description" />
+		</section>
 	);
 }
